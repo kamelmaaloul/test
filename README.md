@@ -1,62 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## À Propos de Mon Projet Arbre
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Mon Projet Arbre est un programme pour crer un ou plusieurs arbres et utiliser les operations connus.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Caractéristiques
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Utilise le programme pour la liaison de données
 
-## Learning Laravel
+Trier et déplacer les éléments dans l'ensemble de l'arborescence
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Empêcher les éléments d'accepter les nœuds enfants
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## API Téléchargement de fichier d'arbre
 
-## Laravel Sponsors
+Un API REST (un programme) , pour générer des fichiers textes de chaque arbre sauvegardé dans la base de données.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Il renvoie un fichier texte avec l'arbre
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+- URL
 
-## Contributing
+       api/get-tree/:id
+- Method
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+        GET
+- URL Params
 
-## Code of Conduct
+        Required id=[integer]
+- Data Params
+       
+       None
+- Success Response:
+        
+        Code: 200
+        Télécharger le fichier texte
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+-Error Response:
 
-## Security Vulnerabilities
+        Code: 200
+        {"result":0,"message":"Arbre introuvable !"}
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+## Database Setup
+Pour ecrire une base de données  pour sauvegarder les données saisies à partir de formulaire.
+Supposons que vous ayez les connexions de base de données suivantes dans notre projet:  
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+
+SET AUTOCOMMIT = 0;
+
+START TRANSACTION;
+
+SET time_zone = "+00:00";
+
+
+## Usage
+
+Pour effectuer n'importe quelle opération sur un arbre Veuillez cliquer sur l'icône dans le coin supérieur droit  Un menu apparaît, sélectionnez l'opération à effectuer.
+
+•	Ecrire un formulaire : pour entrer un nouvel arbre
+
+cliquez sur le bouton : Ajouter un nouvel arbre
+
+
+
+
+
