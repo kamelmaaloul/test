@@ -42,28 +42,63 @@ Il renvoie un fichier texte avec l'arbre
         {"result":0,"message":"Arbre introuvable !"}
 
 
-## Database Setup
+## Import Database 
 Pour ecrire une base de données  pour sauvegarder les données saisies à partir de formulaire.
-Supposons que vous ayez les connexions de base de données suivantes dans notre projet:  
 
+Supposons que vous ayez les connexions de base de données suivantes dans notre projet importer le fichier "tree_test.sql"
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-
-SET AUTOCOMMIT = 0;
-
-START TRANSACTION;
-
-SET time_zone = "+00:00";
 
 
 ## Usage
 
-Pour effectuer n'importe quelle opération sur un arbre Veuillez cliquer sur l'icône dans le coin supérieur droit  Un menu apparaît, sélectionnez l'opération à effectuer.
+Pour effectuer n'importe quelle opération sur un arbre Veuillez cliquer sur l'icône dans le coin supérieur droit
+
+Un menu apparaît, sélectionnez l'opération à effectuer.
+
 
 •	Ecrire un formulaire : pour entrer un nouvel arbre
 
+
 cliquez sur le bouton : Ajouter un nouvel arbre
 
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/evalution.PNG)
+
+
+Après cela, choisissez un "Nom de l'arbre" puis tous ses éléments "Première racine"
+ 
+ 
+ mais gardez la racine de l'arbre .
+
+
+
+•  Tous les arbres:
+
+cliquez sur le bouton : Tous les arbres
+
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/evalution.PNG)
+
+Resultats:
+
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/Capture.PNG)
+
+• Expliquez les fonctions des petites icônes suivantes:
+
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/bouton1.PNG)
+
+-	Afficher un arbre
+
+
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/bouton12.PNG)
+
+
+-	Modification un arbre existant 
+
+
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/bouton13.PNG)
+
+-	Supprimer un arbre
+
+![image](https://raw.githubusercontent.com/kamelmaaloul/test/main/bouton14.PNG)
 
 
 
